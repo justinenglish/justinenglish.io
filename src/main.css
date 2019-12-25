@@ -1,11 +1,122 @@
 body,
 html {
-  background-color: #333;
+  background-color: #fff;
   height: 100%;
   width: 100%;
-  font-family: "Poiret One", cursive;
+  font-family: "Raleway", sans-serif;
+  color: #222;
+}
+
+@keyframes slide-fade-in {
+  0% {
+    opacity: 0;
+    margin-top: -100px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+/**********
+HERO BAND
+**********/
+
+#large-hero-banner {
+  background: url("../images/detroit-bg.jpg") center center no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
   display: flex;
-  justify-content: center;
   align-items: center;
+}
+
+#large-hero-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/**********
+MAIN NAV
+**********/
+
+.main-nav {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  width: 100%;
+  width: auto;
   color: #eee;
+  font-size: 1.1rem;
+  text-align: right;
+}
+
+.main-nav ul {
+  list-style-type: none;
+}
+
+.main-nav a,
+.main-nav a:focus,
+.main-nav a:visited,
+.main-nav a:hover {
+  color: inherit;
+}
+
+.header-content,
+.main-nav {
+  opacity: 0;
+  color: #fff;
+  -moz-animation: slide-fade-in 1.5s 1 forwards;
+  -o-animation: slide-fade-in 1.5s 1 forwards;
+  -webkit-animation: slide-fade-in 1.5s 1 forwards;
+  animation: slide-fade-in 1.5s 1 forwards;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+/**********
+HERO BAND CONTENT
+**********/
+
+.header-content h1 {
+  font-size: 3rem;
+}
+.header-content p {
+  font-size: 1.25rem;
+}
+.header-content .social-icons {
+  margin-top: 1.5rem;
+}
+.header-content .social-icons a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 2rem;
+  margin-right: 1.25rem;
+  opacity: 0.65;
+  cursor: pointer;
+}
+.header-content .social-icons a:hover {
+  opacity: 1;
+}
+.header-content i:last-child {
+  margin-right: 0;
+}
+
+.portrait {
+  background: url("../images/justin.jpg") center center no-repeat;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 1.5rem;
+  border-radius: 99px;
+  border: 1px solid #eee;
 }

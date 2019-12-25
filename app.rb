@@ -1,14 +1,12 @@
 require 'sinatra/base'
 require 'erb'
 
+
+
 class JustinEnglish < Sinatra::Base
-  set :static, true
-  set :public_folder, 'public'
-
-  get '/' do
-    send_file File.join(settings.public_folder, 'index.html')
+  get '/index.html' do
+    "Hello World"
   end
-
 end
 
 JustinEnglish.run!
