@@ -5,6 +5,11 @@ html {
   width: 100%;
   font-family: "Raleway", sans-serif;
   color: #222;
+  scroll-behavior: smooth;
+}
+
+section {
+  margin: 75px 0;
 }
 
 @keyframes slide-fade-in {
@@ -23,7 +28,7 @@ HERO BAND
 **********/
 
 #large-hero-banner {
-  background: url("../images/detroit-bg.jpg") center center no-repeat;
+  background: url("../images/dow-gardens.jpeg") center center no-repeat;
   background-size: cover;
   position: relative;
   width: 100%;
@@ -119,4 +124,78 @@ HERO BAND CONTENT
   margin-bottom: 1.5rem;
   border-radius: 99px;
   border: 1px solid #eee;
+}
+
+/***********
+THREE COLUMN CARDS
+***********/
+.three-column-cards .card {
+  border-radius: 0;
+}
+
+.three-column-cards .three-column-cards__title {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.three-column-cards .three-column-cards__title-intro {
+  font-size: 1.25rem;
+  text-align: center;
+  width: 100%;
+  margin: 0 0 75px;
+}
+
+.three-column-cards
+  .three-column-cards__title-intro
+  .three-column-cards__title-intro--small {
+  font-size: 0.95rem;
+}
+
+.three-column-cards .card:hover {
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+}
+
+.three-column-cards .card .card-title {
+  font-weight: 700;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.three-column-cards .card-footer {
+  position: relative;
+  padding: 0;
+}
+
+.three-column-cards .card-footer .card-footer-link i {
+  opacity: 0;
+  position: absolute;
+  right: 20px;
+  top: 24px;
+  transition: all 0.5s;
+}
+
+.three-column-cards .card-footer:hover i {
+  opacity: 1;
+  top: 16px;
+}
+
+.three-column-cards .card-footer:hover {
+  background-color: #666;
+}
+
+.three-column-cards .card-footer .card-footer-link {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  font-size: 0.9rem;
+  padding: 12px 15px;
+}
+
+.three-column-cards .card-footer:hover .card-footer-link {
+  color: #fff;
+  text-decoration: none;
 }
