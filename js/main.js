@@ -15,4 +15,6 @@ $(document).ready(function() {
       );
     }
   });
+
+  $("#current-year").html(new Date().getFullYear());
 });

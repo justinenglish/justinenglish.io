@@ -33,7 +33,7 @@ HERO BAND
   position: relative;
   width: 100%;
   height: 100%;
-
+  overflow: hidden;
   display: flex;
   align-items: center;
 }
@@ -88,19 +88,39 @@ MAIN NAV
   animation-delay: 1s;
 }
 
+@media only screen and (min-width: 2048px) {
+  .main-nav {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .main-nav {
+    right: 30px;
+    top: 15px;
+  }
+}
+
 /**********
 HERO BAND CONTENT
 **********/
 
+.header-content {
+  padding-left: 50px;
+}
+
 .header-content h1 {
   font-size: 3rem;
 }
+
 .header-content p {
   font-size: 1.25rem;
 }
+
 .header-content .social-icons {
   margin-top: 1.5rem;
 }
+
 .header-content .social-icons a {
   text-decoration: none;
   color: inherit;
@@ -109,9 +129,11 @@ HERO BAND CONTENT
   opacity: 0.65;
   cursor: pointer;
 }
+
 .header-content .social-icons a:hover {
   opacity: 1;
 }
+
 .header-content i:last-child {
   margin-right: 0;
 }
@@ -126,9 +148,62 @@ HERO BAND CONTENT
   border: 1px solid #eee;
 }
 
-/***********
+@media only screen and (min-width: 2048px) {
+  .header-content h1 {
+    font-size: 4.5rem;
+  }
+  .header-content p {
+    font-size: 1.85rem;
+  }
+  .header-content .social-icons a {
+    font-size: 2.5rem;
+  }
+  .portrait {
+    width: 250px;
+    height: 250px;
+    border-radius: 999px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header-content {
+    padding-left: 30px;
+  }
+  .header-content h1 {
+    font-size: 2.25rem;
+  }
+  .header-content p {
+    font-size: 0.9rem;
+  }
+  .header-content .social-icons a {
+    font-size: 1.25rem;
+  }
+  .portrait {
+    width: 85px;
+    height: 85px;
+  }
+}
+
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+  .header-content h1 {
+    font-size: 2.25rem;
+  }
+  .header-content p {
+    font-size: 0.9rem;
+  }
+  .header-content .social-icons a {
+    font-size: 1.5rem;
+  }
+  .portrait {
+    width: 85px;
+    height: 85px;
+  }
+}
+
+/**********
 THREE COLUMN CARDS
-***********/
+**********/
+
 .three-column-cards .card {
   border-radius: 0;
 }
@@ -168,6 +243,7 @@ THREE COLUMN CARDS
 .three-column-cards .card-footer {
   position: relative;
   padding: 0;
+  transition: all 0.5s;
 }
 
 .three-column-cards .card-footer .card-footer-link i {
@@ -198,4 +274,71 @@ THREE COLUMN CARDS
 .three-column-cards .card-footer:hover .card-footer-link {
   color: #fff;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .three-column-cards .card,
+  .three-column-cards .card-deck {
+    display: block;
+    margin: 0;
+  }
+  .three-column-cards .card {
+    margin: 50px 30px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .three-column-cards .card-footer {
+    background-color: #666;
+  }
+  .three-column-cards .card-footer .card-footer-link {
+    color: #fff;
+    text-decoration: none;
+  }
+  .three-column-cards .card-footer .card-footer-link i {
+    opacity: 1;
+    top: 16px;
+  }
+}
+
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+  .three-column-cards .card,
+  .three-column-cards .card-deck {
+    display: block;
+    margin: 0;
+  }
+  .three-column-cards .card {
+    margin: 50px 30px;
+  }
+  .three-column-cards .card-footer {
+    background-color: #666;
+  }
+  .three-column-cards .card-footer .card-footer-link {
+    color: #fff;
+    text-decoration: none;
+  }
+  .three-column-cards .card-footer .card-footer-link i {
+    opacity: 1;
+    top: 16px;
+  }
+}
+
+/**********
+FOOTER
+**********/
+
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  background-color: #666;
+  color: #fff;
+  min-height: 100px;
+  padding: 30px 0;
+}
+
+#footer .footer-copyright a {
+  text-decoration: underline;
+  color: inherit;
 }
