@@ -4,7 +4,7 @@ require 'erb'
 
 
 class JustinEnglish < Sinatra::Base
-  get '/index.html' do
+  get '/' do
     "Hello World"
   end
 end
