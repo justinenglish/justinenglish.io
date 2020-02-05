@@ -6,7 +6,7 @@ export const MainNav = styled.div`
   height: 100px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0);
-  transition: all 0.2s;
+  transition: all 0.4s;
   border-bottom: 1px solid #000;
 
   img {
