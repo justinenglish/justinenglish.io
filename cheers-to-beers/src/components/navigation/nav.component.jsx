@@ -12,7 +12,7 @@ class Nav extends Component {
 
   componentDidMount() {
     document.addEventListener("scroll", () => {
-      const isTop = window.scrollY < 130;
+      const isTop = window.scrollY < 750;
 
       if (isTop !== this.state.isTop) {
         this.setState({ isTop });
