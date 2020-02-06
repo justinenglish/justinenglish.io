@@ -20,6 +20,7 @@ export const MainNav = styled.div`
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
     background-color: rgba(255, 255, 255, 0.9);
     backdrop-filter: saturate(180%) blur(20px);
+    border-bottom: 0;
 
     ul li {
       font-size: 0.9rem;
