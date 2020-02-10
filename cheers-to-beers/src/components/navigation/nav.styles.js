@@ -8,6 +8,7 @@ export const MainNav = styled.div`
   background-color: rgba(255, 255, 255, 0);
   transition: all 0.4s;
   border-bottom: 1px solid #000;
+  z-index: 99999;
 
   img {
     width: 115px;

@@ -4,7 +4,9 @@ import {
   CardSectionTitle,
   CardTitle,
   CardIntro,
-  CardTagline
+  CardTagline,
+  CardWrapper,
+  CardFavoriteIcon
 } from "./cards.styles";
 
 class Cards extends Component {
@@ -27,17 +29,21 @@ class Cards extends Component {
 
   render() {
     return (
-      <div className="container">
-        <div className="row">
-          {this.state.beers.map(beer => console.log(beer))}
-          <CardContainer>
-            <CardSectionTitle>Card Section Title</CardSectionTitle>
-            <CardTitle></CardTitle>
-            <CardIntro></CardIntro>
-            <CardTagline></CardTagline>
-          </CardContainer>
-        </div>
-      </div>
+      <React.Fragment>
+        <CardSectionTitle>Cheers to these beers.</CardSectionTitle>
+        <CardContainer>
+          {this.state.beers.map(beer => (
+            <CardWrapper key={beer.id}>
+              <CardTitle>{beer.name}</CardTitle>
+              <CardFavoriteIcon>
+                <i className="fa fa-star" aria-hidden="true"></i>
+              </CardFavoriteIcon>
+              <CardIntro>{beer.description}</CardIntro>
+              <CardTagline>{beer.tagline}</CardTagline>
+            </CardWrapper>
+          ))}
+        </CardContainer>
+      </React.Fragment>
     );
   }
 }
