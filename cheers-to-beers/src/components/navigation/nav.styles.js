@@ -3,15 +3,14 @@ import styled from "styled-components";
 export const MainNav = styled.div`
   display: flex;
   align-items: center;
-  height: 100px;
+  height: 75px;
   width: 100%;
   background-color: rgba(40, 33, 12, 1);
-  border-bottom: 1px solid #fff;
   transition: all 0.4s;
   z-index: 99999;
 
   img {
-    width: 115px;
+    width: 100px;
     height: auto;
   }
 
@@ -25,10 +24,6 @@ export const MainNav = styled.div`
     ul li {
       font-size: 0.9rem;
     }
-
-    img {
-      width: 75px;
-    }
   }
 
   @media only screen and (max-width: 768px) {
@@ -39,7 +34,7 @@ export const MainNav = styled.div`
 export const MainNavListItem = styled.div`
   display: flex;
   align-items: center;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   color: #fff;
 
   ul {

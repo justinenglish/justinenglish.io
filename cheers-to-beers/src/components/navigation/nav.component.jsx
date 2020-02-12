@@ -33,7 +33,7 @@ class Nav extends Component {
             </div>
             <MainNavListItem>
               <ul>
-                <li>Favorites</li>
+                <li>My Favs</li>
               </ul>
             </MainNavListItem>
           </div>
