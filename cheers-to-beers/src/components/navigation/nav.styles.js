@@ -5,9 +5,9 @@ export const MainNav = styled.div`
   align-items: center;
   height: 100px;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(40, 33, 12, 1);
+  border-bottom: 1px solid #fff;
   transition: all 0.4s;
-  border-bottom: 1px solid #000;
   z-index: 99999;
 
   img {
@@ -19,9 +19,8 @@ export const MainNav = styled.div`
     height: 75px;
     position: fixed;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(40, 33, 12, 0.9);
     backdrop-filter: saturate(180%) blur(20px);
-    border-bottom: 0;
 
     ul li {
       font-size: 0.9rem;
@@ -41,6 +40,7 @@ export const MainNavListItem = styled.div`
   display: flex;
   align-items: center;
   text-transform: uppercase;
+  color: #fff;
 
   ul {
     display: flex;
@@ -50,7 +50,7 @@ export const MainNavListItem = styled.div`
     margin: 0;
 
     li:hover {
-      color: orange;
+      color: #d9db49;
       cursor: pointer;
     }
   }

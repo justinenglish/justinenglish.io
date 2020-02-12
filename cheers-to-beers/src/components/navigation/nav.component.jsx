@@ -27,7 +27,7 @@ class Nav extends Component {
           <div className="row justify-content-between">
             <div className="main-nav__logo">
               <img
-                src={process.env.PUBLIC_URL + "images/beer-logo.png"}
+                src={process.env.PUBLIC_URL + "images/cheers-to-beers-logo.png"}
                 alt="Cheers to Beers logo"
               />
             </div>
