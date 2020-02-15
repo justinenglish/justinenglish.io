@@ -25,15 +25,21 @@ export const CardWrapper = styled.div`
   margin-right: 30px;
   position: relative;
 
-  &:last-child {
-    margin-right: 0;
-  }
-
   &:hover {
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (min-width: 992px) {
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
     margin-right: 0;
   }
 `;
@@ -51,6 +57,11 @@ export const CardFavoriteIcon = styled.div`
       color: #d9db49;
       cursor: pointer;
     }
+  }
+
+  @media only screen and (max-width: 992px) {
+    top: -15px;
+    right: -12px;
   }
 `;
 
