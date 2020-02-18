@@ -34,7 +34,6 @@ export const MainNav = styled.div`
 export const MainNavListItem = styled.div`
   display: flex;
   align-items: center;
-  // text-transform: uppercase;
   color: #fff;
 
   ul {

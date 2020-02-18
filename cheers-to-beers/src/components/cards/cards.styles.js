@@ -1,5 +1,82 @@
 import styled from "styled-components";
 
+export const CardFilter = styled.div`
+  display: flex;
+  align-items: center;
+  margin: 0 auto 30px;
+  padding-left: 15px;
+  max-width: 1200px;
+
+  @media only screen and (max-width: 325px) {
+    display: inline-block;
+    padding-right: 15px;
+    width: 100%;
+  }
+`;
+
+export const CardFilterItem = styled.div`
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  padding: 6px 15px;
+  background-color: orange;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+
+  @media only screen and (max-width: 325px) {
+    width: 75%;
+  }
+
+  &:nth-child(2) {
+    border-top-left-radius: 4px;
+
+    @media only screen and (max-width: 325px) {
+      border-top-right-radius: 4px;
+    }
+  }
+
+  &:last-child {
+    border-top-right-radius: 4px;
+
+    background-color: #999;
+    opacity: 0.3;
+
+    @media only screen and (max-width: 325px) {
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+  }
+
+  //---------------------------------------------
+  // TEMP -- REPLACED UNDER .inactive CLASS
+  //---------------------------------------------
+  &:hover {
+    background-color: orange;
+    opacity: 0.7;
+  }
+
+  &.inactive {
+    opacity: 0.3;
+    background-color: #999;
+
+    &:hover {
+      background-color: orange;
+      opacity: 0.7;
+    }
+  }
+`;
+
+export const CardFilterLabel = styled.div`
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-right: 15px;
+
+  @media only screen and (max-width: 325px) {
+    margin-bottom: 10px;
+  }
+`;
+
 export const CardContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
