@@ -38,22 +38,11 @@ export const CardFilterItem = styled.div`
   &:last-child {
     border-top-right-radius: 4px;
 
-    background-color: #999;
-    opacity: 0.3;
-
     @media only screen and (max-width: 325px) {
       border-top-right-radius: 0;
       border-bottom-left-radius: 4px;
       border-bottom-right-radius: 4px;
     }
-  }
-
-  //---------------------------------------------
-  // TEMP -- REPLACED UNDER .inactive CLASS
-  //---------------------------------------------
-  &:hover {
-    background-color: orange;
-    opacity: 0.7;
   }
 
   &.inactive {
