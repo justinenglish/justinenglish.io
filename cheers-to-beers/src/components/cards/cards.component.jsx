@@ -18,10 +18,8 @@ class Cards extends Component {
 
     this.state = {
       beers: [],
-      filter: {
-        all: true,
-        myFavorites: false
-      }
+      isAllActive: true,
+      isMyFavsActive: false
     };
   }
 
@@ -42,8 +40,28 @@ class Cards extends Component {
         <CardSectionTitle>Cheers to these beers.</CardSectionTitle>
         <CardFilter>
           <CardFilterLabel>Beer Filter:</CardFilterLabel>
-          <CardFilterItem>All</CardFilterItem>
-          <CardFilterItem>My Favs</CardFilterItem>
+          <CardFilterItem
+            className={this.state.isAllActive ? "" : "inactive"}
+            onClick={() =>
+              this.setState({
+                isAllActive: !this.state.isAllActive,
+                isMyFavsActive: !this.state.isMyFavsActive
+              })
+            }
+          >
+            All
+          </CardFilterItem>
+          <CardFilterItem
+            className={this.state.isMyFavsActive ? "" : "inactive"}
+            onClick={() =>
+              this.setState({
+                isMyFavsActive: !this.state.isMyFavsActive,
+                isAllActive: !this.state.isAllActive
+              })
+            }
+          >
+            My Favs
+          </CardFilterItem>
         </CardFilter>
         <CardContainer>
           {this.state.beers.map(beer => (
