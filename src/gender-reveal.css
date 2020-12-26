@@ -1,0 +1,115 @@
+body,
+html {
+    height: 100%; 
+    width: auto; 
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(90deg, var(--c1, #fbc2eb), var(--c2, #a6c1ee) 60%, var(--c1, #fbc2eb)) var(--x, 0)/ 200%;
+}
+
+.wrapper {
+    position: relative; 
+    height: 100vh; 
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+.wrapper #countdown {
+    font-weight: 100;
+}
+
+.wrapper h1 {
+    font-size: 7em; 
+    z-index: 99; 
+    color: #fff; 
+    text-shadow: 1px 2px 4px #777;
+    margin-bottom: 40px;
+}
+
+.wrapper h3 {
+    font-size: 3em;
+    font-weight: 100;
+    text-shadow: 1px 2px 4px #777;
+    color: white;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.wrapper h1 span:nth-child(even) {
+    margin: 0; 
+    font-size: 55%; 
+    font-weight: 300;
+    position: relative; 
+    bottom: 18px;
+}
+
+.wrapper a.btn {
+    font-family: 'Architects Daughter', cursive;
+    z-index: 99;
+    margin-bottom: 30%;
+    border-radius: 4px;
+    padding: 20px 45px;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 2px solid whitesmoke;
+    transition: 0.5s;
+    background: linear-gradient(90deg, var(--c1, #fbc2eb), var(--c2, #a6c1ee) 60%, var(--c1, #fbc2eb)) var(--x, 0)/ 200%;
+    color: white;
+    font-size: 1.25em;
+}
+
+.wrapper .btn:hover { 
+    --x: 100%; 
+}
+
+@media only screen and (max-width: 992px) {
+    .wrapper h1 {
+        font-size: 2.5em;
+    }
+
+    .wrapper h3 {
+        font-size: 1.5em;
+    }
+
+    .wrapper h1 span:nth-child(even) {
+        bottom: 8px;
+    }
+
+    .wrapper a.btn  {
+        padding: 10px 25px;
+        background: linear-gradient(90deg, var(--c1, #a6c1ee), var(--c2, #fbc2eb) 60%, var(--c1, #fbc2eb)) var(--x, 0)/ 200%;
+        margin-bottom: 5%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .wrapper h1 {
+        font-size: 5.5em;
+    }
+
+    .wrapper h3 {
+        font-size: 2.5em;
+    }
+
+    .wrapper a.btn  {
+        padding: 18px 50px;
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 992px) and (orientation: landscape) {
+    .wrapper h1 span:nth-child(even) {
+        bottom: 8px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .wrapper h1 span:nth-child(even) {
+        bottom: 6px;
+    }
+}
