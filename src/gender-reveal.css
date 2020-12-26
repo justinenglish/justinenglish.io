@@ -72,9 +72,9 @@ html {
     --x: 100%; 
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1024px) {
     .wrapper .hero-band {
-        margin-top: -350px;
+        margin-top: -250px;
     }
 }
 
@@ -119,12 +119,22 @@ html {
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 350px) and (max-width: 480px) {
+    .wrapper .hero-band {
+        margin-top: -250px;
+    }
+
     .wrapper h1 span:nth-child(even) {
         bottom: 6px;
     }
 
     .wrapper a.btn {
         margin-bottom: 35%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .wrapper .hero-band {
+        margin-top: -150px;
     }
 }
