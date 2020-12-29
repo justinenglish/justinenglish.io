@@ -15,12 +15,12 @@ let x = setInterval(function() {
 
   if (endtime <= 0) {
     clearInterval(x);
-    // document.getElementById("countdown").innerHTML = "Hold on to your excitement! You're being redirected to the gender reveal page.";
-    // document.getElementById("countdown").style.fontSize = "xx-large";
-    // document.getElementById("countdown").style.padding = "40px";
+    document.getElementById("countdown").innerHTML = "Hold on to your excitement! You're being redirected to the gender reveal page.";
+    document.getElementById("countdown").style.fontSize = "xx-large";
+    document.getElementById("countdown").style.padding = "40px";
 
-    // window.setTimeout(function(){
-    //   window.location.replace('https://justinenglish.github.io/justinenglish.io/gender-reveal/');
-    // }, 3500);
+    window.setTimeout(function(){
+      window.location.replace('https://justinenglish.github.io/justinenglish.io/gender-reveal/');
+    }, 3500);
   }
 }, 1000);

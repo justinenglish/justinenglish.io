@@ -95,20 +95,20 @@ body.gender-revealed .wrapper .hero-band h1 {
 }
 
 body.gender-revealed .wrapper a.btn {
-    -moz-animation: slide-fade-in 5s 1 forwards;
-    -o-animation: slide-fade-in 5s 1 forwards;
-    -webkit-animation: slide-fade-in 5s 1 forwards;
-    animation: slide-fade-in 5s 1 forwards;
-    -moz-animation-delay: 4s;
-    -o-animation-delay: 4s;
-    -webkit-animation-delay: 4s;
-    animation-delay: 4s;
+    -moz-animation: slide-fade-in 3s 1 forwards;
+    -o-animation: slide-fade-in 3s 1 forwards;
+    -webkit-animation: slide-fade-in 3s 1 forwards;
+    animation: slide-fade-in 3s 1 forwards;
+    -moz-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+
+    position: absolute;
+    bottom: 80px;
     transition: 0s;
     opacity: 0;
     background: transparent;
-
-    position: absolute;
-    bottom: 40px;
     margin-bottom: 0%;
 }
 
@@ -137,7 +137,7 @@ body.gender-revealed .wrapper a.btn {
 
     .wrapper a.btn  {
         padding: 10px 25px;
-        background: linear-gradient(90deg, var(--c1, #a6c1ee), var(--c2, #fbc2eb) 60%, var(--c1, #fbc2eb)) var(--x, 0)/ 200%;
+        background: linear-gradient(90deg, var(--c1, #fbc2eb), var(--c2, #a6c1ee) 50%, var(--c1, #fbc2eb)) var(--x, 0)/ 200%;
         margin-bottom: 5%;
     }
 }
@@ -174,10 +174,6 @@ body.gender-revealed .wrapper a.btn {
 
     .wrapper a.btn {
         margin-bottom: 35%;
-    }
-
-    body.gender-revealed .wrapper a.btn {
-        margin-bottom: 0%;
     }
 }
 
