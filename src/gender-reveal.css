@@ -9,7 +9,7 @@ html {
 }
 
 body.gender-not-revealed {
-    background: linear-gradient(90deg, var(--c1, #fbc2eb), var(--c2, #a6c1ee) 60%, var(--c1, #fbc2eb)) var(--x, 0)/ 200%;
+    background: linear-gradient(90deg, var(--c1, #a6c1ee), var(--c2, #fbc2eb) 50%, var(--c1, #fbc2eb)) var(--x, 0)/ 200%;
 }
 
 body.gender-revealed {
