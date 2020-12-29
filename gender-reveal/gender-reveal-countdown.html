@@ -5,22 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Third addition to the English Family! Will it be a third boy or will it be a girl?"
+      content="Third addition to the English Family! Will it be a third boy or will it be a girl? You guess!"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../src/gender-reveal.css" />
-    <title>Justin and Kari - Gender Revealed</title>
+    <title>Justin and Kari - Gender Reveal Countdown</title>
   </head>
-  <body class="gender-revealed">
+  <body class="gender-not-revealed">
     <div class="wrapper">
       <div class="hero-band">
-        <h1>It's a girl!</h1>
-      </div>
+        <h3>Boy or Girl?</h3>
+        <h1 id="countdown">
+            <span id="days"></span>
+            <span>:</span>
+            <span id="hours"></span>
+            <span>:</span>
+            <span id="minutes"></span>
+            <span>:</span>
+            <span id="seconds"></span>
+        </h1>
 
-      <a class="btn" href="gender-reveal-countdown.html" target="blank">View prior to reveal</a>
+        <a class="btn" href="https://www.strawpoll.me/42345512" target="blank">Cast your vote</a>
+      </div>
     </div>
+
+    <script src="../js/gender-reveal-countdown.js"></script>
   </body>
 </html>

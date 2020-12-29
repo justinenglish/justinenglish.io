@@ -1,4 +1,4 @@
-const revealDate = new Date("Dec 30, 2020 12:00:00").getTime();
+const revealDate = new Date("Dec 28, 2020 15:00:00").getTime();
 
 let x = setInterval(function() {
     let now = new Date().getTime();
@@ -13,9 +13,14 @@ let x = setInterval(function() {
   document.getElementById("minutes").innerHTML = minutes + "<span style='font-size: 50%;'>m</span>";
   document.getElementById("seconds").innerHTML = seconds + "<span style='font-size: 50%;'>s</span>";
 
-  // If the count down is finished, write some text
-  if (endtime < 0) {
+  if (endtime <= 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "It's a....";
+    document.getElementById("countdown").innerHTML = "Hold on to your excitement! You're being redirected to the gender reveal page.";
+    document.getElementById("countdown").style.fontSize = "xx-large";
+    document.getElementById("countdown").style.padding = "40px";
+
+    window.setTimeout(function(){
+      window.location.replace('https://justinenglish.github.io/justinenglish.io/gender-reveal/');
+    }, 3500);
   }
 }, 1000);

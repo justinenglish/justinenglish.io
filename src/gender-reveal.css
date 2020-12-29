@@ -6,7 +6,21 @@ html {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+}
+
+body.gender-not-revealed {
     background: linear-gradient(90deg, var(--c1, #fbc2eb), var(--c2, #a6c1ee) 60%, var(--c1, #fbc2eb)) var(--x, 0)/ 200%;
+}
+
+body.gender-revealed {
+    -moz-animation: background-pink 1.5s 1 forwards;
+    -o-animation: background-pink 1.5s 1 forwards;
+    -webkit-animation: background-pink 1.5s 1 forwards;
+    animation: background-pink 1.5s 1 forwards;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
 }
 
 .wrapper {
@@ -22,6 +36,18 @@ html {
 
 .wrapper .hero-band {
     margin-top: -75px;
+}
+
+body.gender-revealed .wrapper .hero-band h1 {
+    -moz-animation: slide-fade-in 1s 1 forwards;
+    -o-animation: slide-fade-in 1s 1 forwards;
+    -webkit-animation: slide-fade-in 1s 1 forwards;
+    animation: slide-fade-in 1s 1 forwards;
+    -moz-animation-delay: 2.5s;
+    -o-animation-delay: 2.5s;
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+    opacity: 0;
 }
 
 .wrapper #countdown {
@@ -66,6 +92,24 @@ html {
     background: linear-gradient(90deg, var(--c1, #fbc2eb), var(--c2, #a6c1ee) 60%, var(--c1, #fbc2eb)) var(--x, 0)/ 200%;
     color: white;
     font-size: 1.25em;
+}
+
+body.gender-revealed .wrapper a.btn {
+    -moz-animation: slide-fade-in 5s 1 forwards;
+    -o-animation: slide-fade-in 5s 1 forwards;
+    -webkit-animation: slide-fade-in 5s 1 forwards;
+    animation: slide-fade-in 5s 1 forwards;
+    -moz-animation-delay: 4s;
+    -o-animation-delay: 4s;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+    transition: 0s;
+    opacity: 0;
+    background: transparent;
+
+    position: absolute;
+    bottom: 40px;
+    margin-bottom: 0%;
 }
 
 .wrapper .btn:hover { 
@@ -131,10 +175,44 @@ html {
     .wrapper a.btn {
         margin-bottom: 35%;
     }
+
+    body.gender-revealed .wrapper a.btn {
+        margin-bottom: 0%;
+    }
 }
 
 @media only screen and (max-width: 350px) {
     .wrapper .hero-band {
         margin-top: -150px;
+    }
+}
+
+/***********
+KEYFRAMES
+***********/
+
+@keyframes slide-fade-in {
+    0% {
+        opacity: 0;
+        margin-top: -200px;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+@keyframes background-pink {
+    0% {
+        background: #fff;
+    }
+    55% {
+        background: #fcd3ee;
+    }
+    75% {
+        background: #fccdec;
+    }
+    100% {
+        background: #fdc5ed;
     }
 }
