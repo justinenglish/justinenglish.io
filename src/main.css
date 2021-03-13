@@ -318,9 +318,9 @@ THREE COLUMN CARDS
     max-width: 1200px;
     margin: 0 auto;
   }
-  /* .three-column-cards .card-deck .card {
-    max-width: 270px;
-  } */
+  .three-column-cards .card-deck .card {
+    max-width: 370px;
+  }
 }
 
 @media screen and (max-width: 900px) and (orientation: landscape) {
