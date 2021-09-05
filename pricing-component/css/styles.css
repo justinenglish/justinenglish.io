@@ -1,0 +1,110 @@
+:root {
+  --primary: linear-gradient(90deg, rgba(163,168,240,1) 0%, rgba(105,111,221,1) 100%);
+  --very-light-grayish-blue: hsl(240, 78%, 98%);
+  --light-grayish-blue: hsl(234, 14%, 74%);
+  --grayish-blue: hsl(233, 13%, 49%);
+  --dark-grayish-blue: hsl(232, 13%, 33%);
+  --white: #fff;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--very-light-grayish-blue);
+  padding: 3.75rem 0.9375rem;
+  margin: 0;
+}
+
+.container {
+  max-width: 105rem;
+}
+
+.subscription-toggle {
+  max-width: 18.25rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: var(--grayish-blue);
+  text-align: center;
+  letter-spacing: 0.5px;
+  margin-bottom: 2.5rem;
+}
+
+.toggle {
+  width: 4rem;
+  padding: 3px;
+  background: var(--primary);
+  border-radius: 1.5rem;
+  transition: all 0.3s;
+}
+
+.toggle:hover {
+  opacity: 0.65;
+  transition: all .4s ease;
+}
+
+.subscription-toggle .title {
+  color: var(--light-grayish-blue);
+}
+
+.toggle input {
+  display: none;
+}
+
+.toggle label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 1.8rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+
+.toggle label::before {
+  content: "";
+  height: 100%;
+  border-radius: inherit;
+  background: var(--primary);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.toggle label::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  width: 1.5625rem;
+  height: 1.5625rem;
+  border-radius: 1.5rem;
+  background: var(--white);
+  transition: all 0.4s ease;
+}
+
+.toggle input:checked ~ label::after {
+  left: 53%;
+  background: var(--white);
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    padding: 3.75rem 1.875rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+}
