@@ -11,19 +11,59 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="scripts/toggle.js"></script>
     <title>Pricing Component</title>
   </head>
   <body>
     <div class="container">
-        <h1>Our Pricing</h1>
-        <div class="subscription-toggle">
-            <div class="title">Annually</div>
-            <div class="toggle">
-                <input id="toggle" type="checkbox">
-                <label for="toggle"></label>
-              </div>
-            <div class="title">Monthly</div>
+      <img class="bg-waves bg-wave-top" src="images/bg-top.svg" />
+
+      <h1>Our Pricing</h1>
+      <div class="subscription-toggle">
+          <div class="title">Annually</div>
+          <div class="toggle">
+            <input id="toggle" type="checkbox">
+            <label for="toggle"></label>
+          </div>
+          <div class="title">Monthly</div>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <h4>Basic</h4>
+          <h2 class="annually show"><span>$</span>199.99</h2>
+          <h2 class="monthly"><span>$</span>19.99</h2>
+          <ul>
+            <li>500 GB Storage</li>
+            <li>2 Users Allowed</li>
+            <li>Send up to 3 GB</li>
+          </ul>
+          <a href="#" class="btn" rel="nofollow noopener">Learn More</a>
         </div>
+        <div class="card">
+          <h4>Professional</h4>
+          <h2 class="annually show"><span>$</span>249.99</h2>
+          <h2 class="monthly"><span>$</span>24.99</h2>
+          <ul>
+            <li>1 TB Storage</li>
+            <li>5 Users Allowed</li>
+            <li>Send up to 10 GB</li>
+          </ul>
+          <a href="#" class="btn" rel="nofollow noopener">Learn More</a>
+        </div>
+        <div class="card">
+          <h4>Master</h4>
+          <h2 class="annually show"><span>$</span>399.99</h2>
+          <h2 class="monthly"><span>$</span>39.99</h2>
+          <ul>
+            <li>2 TB Storage</li>
+            <li>10 Users Allowed</li>
+            <li>Send up to 20 GB</li>
+          </ul>
+          <a href="#" class="btn" rel="nofollow noopener">Learn More</a>
+        </div>
+      </div>
+
+      <img class="bg-waves bg-wave-bottom" src="images/bg-bottom.svg" />
     </div>
   </body>
 </html>
