@@ -1,12 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const el = document.getElementsByTagName("label")[0];
-  const monthly = document.getElementsByClassName("monthly");
-  const annually = document.getElementsByClassName("annually");
+  const el = document.getElementsByTagName("label")[0]
+  const plans = document.getElementsByTagName('h2')
 
   el.addEventListener("click", () => {
-    for (var i = 0; i < monthly.length; i++) {
-      monthly[i].classList.toggle("show");
-      annually[i].classList.toggle("show");
+    for (var i = 0; i < plans.length; i++) {
+      plans[i].classList.toggle("show")
     }
   })
-});
+})
