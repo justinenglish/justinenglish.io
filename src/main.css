@@ -238,12 +238,6 @@ THREE COLUMN CARDS
   padding: 0 30px;
 }
 
-.three-column-cards
-  .three-column-cards__title-intro
-  .three-column-cards__title-intro--small {
-  font-size: 0.95rem;
-}
-
 .three-column-cards .card:hover {
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
 }
